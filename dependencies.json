@@ -1,0 +1,35 @@
+[
+  {
+    "id": "DEP-001",
+    "name": "Identity API Integration",
+    "owner": "Identity Team",
+    "status": "At Risk",
+    "planned_eta": "2026-10-10",
+    "current_eta": "2026-10-14",
+    "critical_path": true,
+    "downstream_dependencies": ["DEP-004", "DEP-006"],
+    "impact": "Blocks integration testing"
+  },
+  {
+    "id": "DEP-002",
+    "name": "Data Pipeline",
+    "owner": "Data Platform",
+    "status": "On Track",
+    "planned_eta": "2026-10-15",
+    "current_eta": "2026-10-15",
+    "critical_path": false,
+    "downstream_dependencies": [],
+    "impact": "No current launch impact"
+  },
+  {
+    "id": "DEP-003",
+    "name": "Mobile Client Release",
+    "owner": "Mobile Engineering",
+    "status": "On Track",
+    "planned_eta": "2026-10-18",
+    "current_eta": "2026-10-20",
+    "critical_path": false,
+    "downstream_dependencies": ["DEP-007"],
+    "impact": "May compress validation window"
+  }
+]
