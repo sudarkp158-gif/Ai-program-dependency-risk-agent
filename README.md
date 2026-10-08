@@ -25,3 +25,41 @@ The TPM validates the AI output and owns the decision.
 python app.py
 pytest
 ```
+
+## Architecture
+
+Step 1 - Deterministic risk
+Step 2 - Emerging-risk scoring
+Step 3 - AI-powered TPM recommendation
+
+Python calculates ETA variance, downstream impact and deterministic risk signals.
+AI interprets those signals and can generate risk explanations, impact analysis,
+recommended actions and escalation recommendations.
+The TPM validates the AI output and owns the decision.
+
+Deterministic facts → AI reasoning → Human decision
+
+```
+Dependency Data
+      ↓
+Deterministic Analysis
+      ↓
+Current Risk
+      ↓
+Emerging Risk
+      ↓
+AI Reasoning
+      ↓
+TPM Action
+Dependency Data
+      ↓
+Deterministic Analysis
+      ↓
+Current Risk
+      ↓
+Emerging Risk
+      ↓
+AI Reasoning
+      ↓
+TPM Action
+```
