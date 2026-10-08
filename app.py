@@ -2,7 +2,7 @@ from dependency_engine import load_dependencies
 from risk_engine import assess_dependency
 
 def main():
-    dependencies = load_dependencies("data/dependencies.json")
+    dependencies = load_dependencies("dependencies.json")
     print("\nPROGRAM DEPENDENCY RISK REPORT")
     print("=" * 70)
     for dep in dependencies:
